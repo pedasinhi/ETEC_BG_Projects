@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Intervalo de datas de cada signo</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+<form id="inputsection">
+    <div id="datainput">
+
+        <h1>Dia em que Nasceu?</h1>
+
+        <label for="data_nasc">Informe o dia em que nasceu:</label>
+        <input type="number" id="data_nasc" placeholder="Dia" min="1" max="31" required>
+
+        <label for="data_mes">Informe o mes em que nasceu:</label>
+        <input type="number" id="data_mes" placeholder="Mes" min="1" max="12" required>
+
+        <label for="data_ano">Informe o ano em que nasceu:</label>
+        <input type="number" id="data_ano" placeholder="Ano" required>
+
+    </div>
+</form>
+
+<div id="resultados">
+
+    <label for="nome_mes">Seu mes de nascimento:</label>
+    <input type="text" id="nome_mes" readonly>
+
+    <label for="dia_semana">Seu dia da semana foi:</label>
+    <input type="text" id="dia_semana" readonly>
+
+    <label for="signoimg">Seu signo é:</label>
+    <input type="text" id="signoimg" readonly>
+
+    <img id="imagens_signo" src="" alt="Imagem do signo">
+
+    <label for="idade">E a sua idade é:</label>
+    <input type="text" id="idade" readonly>
+
+</div>
+
+<div id="resultado">
+
+    <button type="button" id="limpar">Limpar</button>
+    <button type="button" id="resultad">Resultado</button>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
