@@ -1,0 +1,42 @@
+body {
+font-family: Arial, sans-serif;
+}
+
+#inputsection,
+#resultados,
+#resultado {
+margin: 20px;
+}
+
+#datainput {
+display: flex;
+flex-direction: column;
+width: 300px;
+}
+
+#datainput input {
+margin-bottom: 10px;
+}
+
+#resultados {
+display: flex;
+flex-direction: column;
+width: 300px;
+}
+
+#resultados input {
+margin-bottom: 10px;
+}
+
+#imagens_signo {
+width: 150px;
+height: 150px;
+object-fit: contain;
+margin: 10px 0;
+}
+
+button {
+padding: 8px 15px;
+margin-right: 5px;
+cursor: pointer;
+}

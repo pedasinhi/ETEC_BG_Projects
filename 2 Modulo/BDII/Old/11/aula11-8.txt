@@ -1,0 +1,128 @@
+
+,Especialização e generalização:
+
+normalização:
+A normalização é o processo de organizar os dados em tabelas para evitar:
+>redundancio;
+>inconcistencia;
+>anomalias de atualização.
+
+Ela melhora:
+>organização;
+>integirdade;
+>eficiencia.
+
+Redundancia de dados:
+redundadncia de dados ocorre quando o mesmo dado aparece varias vezes.
+exemplo:
+clinete |produto   |endereço
+joao    |notebook  |rua A
+joao    |mouse     |rua A
+O endereço esta repetido.
+
+Problemas:
+>ocupa espaço;
+>risco de inconcistemcia
+
+Objetivos da normalização:
+>eliminar duplicações;
+>organizar dados;
+>separar entidades;
+>melhorar consistencia.
+
+Primeira Forma normal (1FN)
+Regra:
+cada campo deve possuir apenas um valor
+
+exemplo incorreto:
+cliente|telefone
+joao   | 9999,8888
+
+exemplo correto
+client | telefone
+joao   | 9999
+joao   | 8888
+
+Segunda Forma Normal (2FN)
+Regra:
+Todos os atributos devem depender da chave primaria completa.
+
+eliminar repetições.
+
+Exemplo incorreto:
+id_pedido id_produto nome_produto
+nome_produto depende apenas de id_produto.
+
+Solução:
+Separar em outra tabela.
+|Aluno|
+|PK|
+RM|Nome|sexo|cep|lougradouro
+24|luiz|  |105|rua ali
+
+Terceira Forma Normal (3FN)
+Regra:
+Não deve haver dependência transitiva.
+
+Exemplo incorreto:
+|id_cliente|cidade|estado
+estado depende de cidade
+
+Solução:
+Criar tabela cidade.
+
+Beneficios da normalização
+> Reduz redundância
+> Evita consistência
+> facility manutenção
+
+Desnormalização
+Desnormalização é o processo inverso.
+
+Tipos Númericos
+Inteiros
+SMALLINT 2 bytes (from -32768 to 32767);
+INTEGER 4 bytes (from -2147483648 to 2147483647);
+BIGINT 8 bytes (from -9223372036854775808 to 9223372036854775807)
+
+Reais:
+Float 7 digitos;
+Double 15 dígitos;
+Decimal Precis]ap e escala especificadas;
+
+Tipos de caractere:
+Char(n): String fixa de caracteres com tamanho n;
+Varchar(n): String variável de caracteres com tamanho máximo n;
+Text: String longa de caracteres(Sem limite de tamanho);
+Nchar(n) String fixa de caracteres Unicode com tamanho n;
+Nvarchar(n) String variável de caracteres Unicode com tamanho máximo n;
+
+Tipos de data e hora:
+Date: Data no formato AAAAA-MM_DD;
+Time: Hora no formato HH:MM:SS;
+DateTime: Data e f hora no formato AAAA- MM;
+
+Tipos especiais:
+bit: true/false;
+binary(n): array de bytes com tamanho n;
+varbinary(n): array variável de bytes com tamanho máximo de n;
+
+Tipos de dados nulos: 
+Null: indica valor ausente ou desconhecido;
+
+
+regras de derivação:
+descreve atributos que dependem de outro atributo ou calculo.
+
+
+
+capitulo 12 linguagem SQL padfrão ANSI
+
+Ansi defini os seguintes elementos
+comandos básicos: select, update, insert, delete
+funções: funções matemáticos de agregação de ,amo,uilacoa de strings
+tipos de dados: inteiros, string, data, etc.
+restrições:
+
+
+
