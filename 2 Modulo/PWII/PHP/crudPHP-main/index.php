@@ -10,7 +10,6 @@
     <header>
         <h1>CRUD PHP</h1>
     </header>
-
     <main>
         <nav>
             <ul>
