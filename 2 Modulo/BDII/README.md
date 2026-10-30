@@ -481,7 +481,7 @@ A proposta é manter os estudos organizados, versionados e acompanhados de aplic
 
 # 👨‍💻 Autor
 
-**Cauã Martins do Nascimento**
+**Enzo Chaves Silva Lima Paes**
 
 🎓 Estudante de **Análise e Desenvolvimento de Sistemas**
 
