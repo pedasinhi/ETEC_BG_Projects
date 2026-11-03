@@ -3,18 +3,23 @@ class Veiculo {
   late int velocidade;
   late bool licenciado;
 
-  void verificarLicenciamento(){
+  bool verificarLicenciamento() {
     if (licenciado) {
       print('O veículo $modelo está licenciado');
-    }
-    else {
+    } else {
       print('O veículo $modelo não está licenciado');
     }
+    return licenciado;
   }
 
-  void acelerar(){
-    velocidade += 10;
-    print('Velocidade atual do $modelo: $velocidade km/h');
+  // Usa verificarLicenciamento(): só acelera se estiver licenciado
+  void acelerar() {
+    if (verificarLicenciamento()) {
+      velocidade += 10;
+      print('Velocidade atual do $modelo: $velocidade km/h');
+    } else {
+      print('O $modelo não pode acelerar');
+    }
   }
 
   void frear() {

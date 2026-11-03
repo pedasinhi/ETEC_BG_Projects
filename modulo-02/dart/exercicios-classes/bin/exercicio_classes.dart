@@ -10,7 +10,9 @@ void main() {
   carro.capacidadeCombustivel = 2;
 
   carro.acelerar();
-  carro.abastecerVeiculo();
+  carro.abastecerVeiculo(1);
+  carro.abastecerVeiculo(5);
+  carro.viajar();
 
   Moto moto = Moto();
   moto.modelo = 'CG 160';
@@ -28,7 +30,7 @@ void main() {
   caminhao.capacidadeCarga = 8150;
 
   caminhao.frear();
-  caminhao.carregarCaminhao();
-
-
+  caminhao.carregarCaminhao(5000);
+  caminhao.carregarCaminhao(4000);
+  caminhao.iniciarEntrega();
 }
